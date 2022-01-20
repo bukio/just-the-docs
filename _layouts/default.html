@@ -65,9 +65,11 @@ layout: table_wrappers
         {% include nav.html pages=site.html_pages %}
       {% endif %}
     </nav>
+    {% if site.nav_footer %}
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+      {{ site.nav_footer }}
     </footer>
+    {% endif %}
   </div>
   <div class="main" id="top">
     <div id="main-header" class="main-header">
